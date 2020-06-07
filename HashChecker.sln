@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cryptography", "Cryptography\Cryptography.csproj", "{AD7C0701-FBB6-4289-A508-AA1D56A214AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashCheckerUI", "HashCheckerUI\HashCheckerUI.csproj", "{AE3EC405-1D93-4A97-964A-880362244624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashCkeckerConsole", "HashCkeckerConsole\HashCkeckerConsole.csproj", "{CEDFA3DE-7A34-4022-AC00-D93050E36FA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD7C0701-FBB6-4289-A508-AA1D56A214AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD7C0701-FBB6-4289-A508-AA1D56A214AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD7C0701-FBB6-4289-A508-AA1D56A214AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD7C0701-FBB6-4289-A508-AA1D56A214AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE3EC405-1D93-4A97-964A-880362244624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE3EC405-1D93-4A97-964A-880362244624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE3EC405-1D93-4A97-964A-880362244624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE3EC405-1D93-4A97-964A-880362244624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEDFA3DE-7A34-4022-AC00-D93050E36FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEDFA3DE-7A34-4022-AC00-D93050E36FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEDFA3DE-7A34-4022-AC00-D93050E36FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEDFA3DE-7A34-4022-AC00-D93050E36FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B66686CD-DDE8-4753-AD20-A8FEE0268695}
+	EndGlobalSection
+EndGlobal

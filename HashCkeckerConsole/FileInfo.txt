@@ -1,0 +1,15 @@
+﻿Filename: Test.ext
+File Size: 562,688 bytes
+MD5: EBC13A2B29EB457B0B54140ED9E3B33E
+SHA1: 86BE8EDB38190BB42EF65F5192E3FABD94E16BFA
+SHA256: 44EDB005D4EBBB3CEA451952147792CFBFAF6C22920F18DFD76B935CBAC06E4F
+
+
+//Cleaner cleaner = new Cleaner(new Folder(Environment.GetFolderPath(Environment.SpecialFolder.Desktop)));
+		//Console.WriteLine($"Наименование директории: {cleaner.Folder.Name}");
+		//Console.WriteLine($"Количество файлов: {cleaner.Folder.FilesCount}");
+		//Console.WriteLine($"Количество папок: {cleaner.Folder.FoldersCount}");
+		//Console.WriteLine($"Количество элементов: {cleaner.Folder.Count}");
+		//Console.WriteLine($"Размер директории(в байтах): {cleaner.Folder.Length}");
+		//cleaner.ListOfExtensions();
+		//Console.ReadKey();
