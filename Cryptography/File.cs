@@ -6,10 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 using SysFile = System.IO.File;
+using SysFileInfo = System.IO.FileInfo;
 
 namespace Cryptography
 {
-	class File
+	public class File
 	{
 		private readonly byte[] _fileRawData;
 
@@ -38,18 +39,41 @@ namespace Cryptography
 		public File(string path)
 		{
 			if (SysFile.Exists(path))
+			{
 				_fileRawData = SysFile.ReadAllBytes(path);
+
+				var fileInfo = new SysFileInfo(path);
+
+				Name = fileInfo.Name;
+				Path = fileInfo.DirectoryName;
+				FullPath = fileInfo.FullName;
+				Extension = fileInfo.Extension;
+				Length = fileInfo.Length;
+			}
 			else
 				throw new FileNotFoundException();
 		}
 
 
-		//Destructor
-		~File()
+		internal byte[] GetBytes()
 		{
-			
+			return _fileRawData;
+		}
+
+		public override string ToString()
+		{
+			var properties =  new List<string>
+			{
+				$"File name: \t{Name}",
+				$"File path: \t{Path}",
+				$"File full path: {FullPath}",
+				$"File Extension: {Extension}",
+				$"File Lenght: \t{Length}",
+			};
+			return String.Join("\n", properties);
 		}
 	}
+
 
 	class Analyzer
 	{

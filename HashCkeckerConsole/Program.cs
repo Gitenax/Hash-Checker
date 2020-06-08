@@ -14,18 +14,15 @@ namespace HashCkeckerConsole
 
 		static void Main(string[] args)
 		{
-			string[] strings =
-			{
-				"Проверка файла на MD5:",
-				$"Файл: {PATH}",
-				"Размер файла: 562,688 bytes",
-				"MD5 файла: EBC13A2B29EB457B0B54140ED9E3B33E",
-				"\n\n"
-			};
+			File sample = new File(PATH);
+			Console.WriteLine(sample.ToString());
 
 
-			Console.WriteLine(String.Join("\n", strings));
-
+			Console.WriteLine(Hash.CalculateMD5(sample));
+			Console.WriteLine(Hash.CalculateSHA1(sample));
+			Console.WriteLine(Hash.CalculateSHA256(sample));
+			Console.WriteLine(Hash.CalculateSHA384(sample));
+			Console.WriteLine(Hash.CalculateSHA512(sample));
 
 			Delay();
 		}
